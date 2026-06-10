@@ -3,28 +3,36 @@
   --color-primary: #22d3ee;
   /* Electric Cyan */
   --color-primary-hover: #06b6d4;
+  --color-primary-rgb: 34, 211, 238;
+  
   --color-accent: #a855f7;
   /* Creative Purple */
   --color-accent-hover: #9333ea;
+  --color-accent-rgb: 168, 85, 247;
+  
   --color-danger: #ef4444;
 
-  /* Backgrounds - Strict Dark Mode */
-  --bg-app: #050505;
-  /* Deepest Black */
-  --bg-panel: #0a0a0a;
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  --gradient-primary-hover: linear-gradient(135deg, var(--color-primary-hover) 0%, var(--color-accent-hover) 100%);
+
+  /* Backgrounds - Strict Premium Dark Mode with subtle blue-gray tint */
+  --bg-app: #050609;
+  /* Deepest Space Black */
+  --bg-panel: #0b0c10;
   /* Panel Background */
-  --bg-card: #141414;
+  --bg-card: #12141c;
   /* Card/Input Background */
-  --bg-glass: rgba(10, 10, 10, 0.8);
+  --bg-glass: rgba(5, 6, 9, 0.75);
 
   /* Text */
   --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-muted: #52525b;
+  --text-secondary: #94a3b8; /* Tailwind slate-400 for better readability */
+  --text-muted: #64748b;     /* Tailwind slate-500 */
 
   /* UI Elements */
-  --border-color: #27272a;
-  --border-light: rgba(255, 255, 255, 0.1);
+  --border-color: #1e293b;   /* slate-800 */
+  --border-light: rgba(255, 255, 255, 0.08);
 
   --border-radius-sm: 6px;
   --border-radius-md: 10px;
@@ -36,13 +44,13 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-  --shadow-glow: 0 0 20px rgba(176, 251, 93, 0.4);
-  --shadow-glow-accent: 0 0 20px rgba(168, 85, 247, 0.4);
-  --backdrop-blur: blur(20px);
+  --shadow-glow: 0 0 20px rgba(var(--color-primary-rgb), 0.25);
+  --shadow-glow-accent: 0 0 20px rgba(var(--color-accent-rgb), 0.25);
+  --backdrop-blur: blur(24px);
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Typography */
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
